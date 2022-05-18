@@ -37,7 +37,7 @@ function checkPasswordLength(minimumLength, documentField, massage) {
 }
 
 function checkPasswordConfirmation(passwordField1, passwordField2, documentField, massage) {
-    if (passwordField1.value != passwordField2.value) {
+    if (passwordField1.value !== passwordField2.value) {
         documentField.innerHTML = massage;
     } else {
         documentField.innerHTML = "";
